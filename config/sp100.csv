@@ -1,0 +1,101 @@
+id,ticker,name,price,volatility
+0,AAPL,Apple Inc.,195.50,0.0220
+1,MSFT,Microsoft Corp.,380.25,0.0195
+2,GOOGL,Alphabet Inc.,142.80,0.0235
+3,AMZN,Amazon.com Inc.,178.25,0.0280
+4,NVDA,NVIDIA Corp.,495.50,0.0350
+5,META,Meta Platforms Inc.,475.30,0.0265
+6,TSLA,Tesla Inc.,248.75,0.0420
+7,BRK.B,Berkshire Hathaway Inc.,456.80,0.0180
+8,V,Visa Inc.,285.90,0.0210
+9,JPM,JPMorgan Chase & Co.,201.50,0.0225
+10,JNJ,Johnson & Johnson,156.40,0.0155
+11,WMT,Walmart Inc.,169.80,0.0165
+12,XOM,Exxon Mobil Corp.,109.75,0.0240
+13,UNH,UnitedHealth Group Inc.,524.60,0.0185
+14,PG,Procter & Gamble Co.,158.30,0.0145
+15,MA,Mastercard Inc.,425.70,0.0205
+16,HD,Home Depot Inc.,365.20,0.0210
+17,CVX,Chevron Corp.,156.90,0.0230
+18,ABBV,AbbVie Inc.,168.50,0.0195
+19,BAC,Bank of America Corp.,34.85,0.0255
+20,ORCL,Oracle Corp.,119.45,0.0220
+21,KO,Coca-Cola Co.,61.25,0.0135
+22,PEP,PepsiCo Inc.,172.40,0.0140
+23,COST,Costco Wholesale Corp.,789.60,0.0175
+24,MRK,Merck & Co. Inc.,99.80,0.0180
+25,AVGO,Broadcom Inc.,1456.30,0.0285
+26,LLY,Eli Lilly and Co.,785.20,0.0270
+27,CSCO,Cisco Systems Inc.,56.75,0.0215
+28,TMO,Thermo Fisher Scientific Inc.,548.90,0.0190
+29,PFE,Pfizer Inc.,26.35,0.0220
+30,ABT,Abbott Laboratories,115.60,0.0175
+31,DIS,Walt Disney Co.,94.25,0.0265
+32,CRM,Salesforce Inc.,289.50,0.0295
+33,ACN,Accenture PLC,352.80,0.0185
+34,NKE,Nike Inc.,75.80,0.0270
+35,ADBE,Adobe Inc.,485.30,0.0240
+36,TXN,Texas Instruments Inc.,186.70,0.0200
+37,NFLX,Netflix Inc.,665.40,0.0320
+38,AMD,Advanced Micro Devices Inc.,138.90,0.0380
+39,QCOM,Qualcomm Inc.,153.20,0.0260
+40,PM,Philip Morris International Inc.,120.45,0.0180
+41,NEE,NextEra Energy Inc.,75.90,0.0195
+42,INTC,Intel Corp.,19.85,0.0350
+43,UNP,Union Pacific Corp.,238.70,0.0205
+44,IBM,International Business Machines,215.40,0.0220
+45,COP,ConocoPhillips,110.25,0.0270
+46,RTX,RTX Corp.,108.50,0.0190
+47,HON,Honeywell International Inc.,215.80,0.0185
+48,UPS,United Parcel Service Inc.,127.60,0.0210
+49,AMGN,Amgen Inc.,285.70,0.0175
+50,LOW,Lowe's Companies Inc.,265.40,0.0200
+51,SBUX,Starbucks Corp.,94.80,0.0235
+52,CAT,Caterpillar Inc.,358.90,0.0215
+53,BA,Boeing Co.,176.50,0.0340
+54,GE,General Electric Co.,172.30,0.0250
+55,MDT,Medtronic PLC,84.60,0.0185
+56,AXP,American Express Co.,234.50,0.0220
+57,BLK,BlackRock Inc.,918.70,0.0175
+58,MMM,3M Co.,127.80,0.0205
+59,DE,Deere & Co.,408.90,0.0225
+60,GS,Goldman Sachs Group Inc.,478.20,0.0240
+61,LMT,Lockheed Martin Corp.,478.60,0.0165
+62,SYK,Stryker Corp.,348.70,0.0175
+63,GILD,Gilead Sciences Inc.,84.50,0.0195
+64,MDLZ,Mondelez International Inc.,63.20,0.0155
+65,BKNG,Booking Holdings Inc.,4128.50,0.0260
+66,ADI,Analog Devices Inc.,215.80,0.0230
+67,TJX,TJX Companies Inc.,108.90,0.0180
+68,ADP,Automatic Data Processing Inc.,285.40,0.0165
+69,VRTX,Vertex Pharmaceuticals Inc.,465.80,0.0245
+70,CVS,CVS Health Corp.,54.70,0.0210
+71,ISRG,Intuitive Surgical Inc.,528.90,0.0255
+72,CI,Cigna Group,323.40,0.0185
+73,MO,Altria Group Inc.,54.30,0.0170
+74,CME,CME Group Inc.,225.60,0.0175
+75,ZTS,Zoetis Inc.,172.80,0.0180
+76,PLD,Prologis Inc.,119.70,0.0190
+77,SO,Southern Co.,86.50,0.0150
+78,CB,Chubb Ltd.,275.90,0.0165
+79,DUK,Duke Energy Corp.,109.40,0.0145
+80,USB,U.S. Bancorp,45.80,0.0210
+81,BDX,Becton Dickinson and Co.,238.60,0.0175
+82,TGT,Target Corp.,142.50,0.0240
+83,BMY,Bristol-Myers Squibb Co.,51.80,0.0200
+84,SHW,Sherwin-Williams Co.,348.90,0.0190
+85,CL,Colgate-Palmolive Co.,93.70,0.0140
+86,ITW,Illinois Tool Works Inc.,258.70,0.0175
+87,EOG,EOG Resources Inc.,128.40,0.0265
+88,NSC,Norfolk Southern Corp.,248.90,0.0205
+89,APD,Air Products and Chemicals Inc.,289.60,0.0185
+90,MMC,Marsh & McLennan Companies Inc.,215.80,0.0170
+91,FIS,Fidelity National Information Services Inc.,81.50,0.0225
+92,HUM,Humana Inc.,267.90,0.0195
+93,CSX,CSX Corp.,34.60,0.0200
+94,MCO,Moody's Corp.,452.80,0.0185
+95,PNC,PNC Financial Services Group Inc.,174.20,0.0210
+96,SLB,Schlumberger Ltd.,42.90,0.0280
+97,ICE,Intercontinental Exchange Inc.,156.30,0.0180
+98,ECL,Ecolab Inc.,238.70,0.0170
+99,WM,Waste Management Inc.,215.40,0.0160
