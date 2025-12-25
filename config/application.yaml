@@ -1,0 +1,91 @@
+system:
+  name: "VelocityTrade"
+  version: "1.0.0"
+  environment: "development"
+
+market_data:
+  # Data source: "csv" or "api"
+  data_source: "api"  # Start with CSV, switch to "api" when ready
+
+  # CSV configuration
+  csv:
+    filepath: "config/sp100.csv"
+
+  # API configuration (Yahoo Finance)
+  api:
+    provider: "yahoo_finance"
+    base_url: "https://query1.finance.yahoo.com"
+    timeout_seconds: 10
+    cache_ttl_hours: 24
+    # If API fails, fall back to CSV
+    fallback_to_csv: true
+
+  enabled: true
+  multicast_group: "239.255.0.1"
+  multicast_port: 5000
+  update_frequency_hz: 100
+
+  # Logging (for 100 symbols)
+  logging:
+    log_every_n_messages: 1000    # Log stats every 1000 msgs (~1 sec)
+    detailed_report_interval_sec: 10  # Detailed report every 10 sec
+    log_individual_messages: false    # Don't log each message (too noisy)
+
+
+disruptor:
+  ring_buffer_size: 1048576
+  wait_strategy: "BUSY_SPIN"
+  producer_type: "SINGLE"
+
+strategies:
+  market_maker:
+    enabled: true
+    target_spread_ticks: 2
+    max_inventory: 1000
+    quote_size: 100
+    inventory_skew_enabled: true
+
+  arbitrage:
+    enabled: true
+    lookback_window: 100
+    entry_threshold_zscore: 2.0
+    exit_threshold_zscore: 0.5
+    position_size: 100
+
+  momentum:
+    enabled: true
+    momentum_threshold: 0.001
+    stop_loss: 0.005
+    take_profit: 0.010
+    position_size: 100
+
+risk:
+  max_position_per_symbol: 1000
+  max_order_value: 100000.0
+  max_orders_per_second: 100
+  max_daily_loss: 10000.0
+
+  kill_switch:
+    enabled: true
+    pnl_threshold: -10000.0
+    error_rate_threshold: 0.01
+    latency_threshold_us: 1000
+
+execution:
+  simulated_ack_latency_us: [20, 50]
+  simulated_fill_latency_us: [50, 100]
+
+monitoring:
+  prometheus_port: 9090
+  websocket_port: 8080
+  metrics_update_interval_ms: 100
+
+persistence:
+  chronicle_queue_path: "data/audit"
+  retention_days: 90
+
+logging:
+  level: "INFO"
+  file: "logs/velocitytrade.log"
+  max_size: "100MB"
+  max_history: 30
